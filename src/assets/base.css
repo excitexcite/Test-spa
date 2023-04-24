@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap');
+
+:root {
+  --c-white: #ffffff;
+  --c-black-400: #272727;
+  --c-black-500: #181818;
+  --c-grey-500: #dadada;
+  --c-grey-300: #f3f3f2;
+  --c-yellow: #ffc700;
+  --c-green: #3bde7c;
+  --c-blue: #2950c2;
+  --c-red: #eb1b00;
+
+  --c-menu: #696969;
+}
+
+:root {
+  --color-background: var(--c-black-400);
+  --color-text: var(--c-white);
+
+  --selected-option-bg: rgb(242, 243, 243, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: var(--color-text);
+  background-image: url('@/assets/stars-bg.jpg');
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.5;
+  font-family: 'PT Serif', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  font-family: Merriweather;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input[type='radio'] {
+  appearance: none;
+  outline: none;
+}
+
+.button-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  min-width: 190px;
+  min-height: 39px;
+  padding: 12px 17px;
+  border-radius: 20px;
+  font-family: 'Merriweather';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+}
+
+.button-primary {
+  background-color: var(--c-yellow);
+  color: var(--c-black-500);
+}
+
+.button-primary--disabled {
+  color: var(--c-black-500);
+  background-color: #dadada;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.button-outlined {
+  background-color: transparent;
+  color: var(--c-white);
+  border: 1px solid var(--c-white);
+}
+
+.icon-button {
+  line-height: 0;
+}
+
+.text-colored {
+  color: var(--c-yellow);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-semibold {
+  font-weight: 700;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.text-underlined {
+  text-decoration: underline;
+}
